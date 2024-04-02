@@ -18,7 +18,7 @@ reef feature list (see details further below).
 The entry for the GBRMPA Reef feature list (see link above) states that it has been updated
 in 2023-08-16. Therefore, I assume those IDs are the most correct ones and default to those.
 
-## Layout
+## Project Layout
 
 Assumes `src` is the project root. Each file in `src` is expected to be run in order.
 
@@ -31,6 +31,23 @@ GBR-FeatureAnalysis/
 ├─ Project.toml  # Julia project spec
 ├─ LICENSE.md
 ├─ README.md  # this file
+```
+
+## Setup
+
+Usual Julia setup.
+
+```bash
+$ julia --project=.
+```
+
+```julia
+# Instantiate project and switch to src directory
+]instantiate
+;cd src
+
+# Run first script
+include("1_create_canonical.jl")
 ```
 
 ## Discrepancies
